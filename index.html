@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuki Mancsok - Kisállatgondozás</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<nav>
+<div class="logo-container">
+<img src="images/logo.png" alt="Cuki Mancsok logó" class="logo">
+<h1>Cuki Mancsok</h1>
+</div>
+<ul class="nav-links">
+<li><a href="#about">Rólunk</a></li>
+<li><a href="#services">Szolgáltatások</a></li>
+<li><a href="#gallery">Galéria</a></li>
+<li><a href="#contact">Kapcsolat</a></li>
+<li><a href="#contact">Időpontfoglalás</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="hero">
+<div class="hero-content">
+<h2>Kedvenced a legjobb kezekben!</h2>
+<p>Mi szeretettel gondoskodunk kedvencedről, legyen szó napköziről sétáltatásról kozmetikáról vagy oktatásról.</p>
+<a href="#services" class="cta-button">Ismerd meg a szolgáltatásainkat</a>
+</div>
+</section>
+<section id="about" class="container">
+<h2>Rólunk</h2>
+<p>A Cuki Mancsok csapata elkötelezett, hogy minden kutya biztonságban és boldogan tölthesse idejét nálunk.</p> <p>Kedvencének minden területen és élethelyzetben professzionális megoldást nyújtunk többek között kutyapanzió, kutyakozmetika, kutyakiképzés, aktív napközi.</p>
+<p>Valamennyi szolgáltatásunkat sokéves tapasztalattal, kellő fizikai kondícióval rendelkező, adott területre és sokszor éppen az ügyfél kedvencének fajára specializált kolléga nyújtja nemcsak a magas színvonal biztosítása érdekében, sokkal inkább a kutyus egészsége, kényelme, és számtalan esetben az őt körülvevő emberek, állatok és tárgyak épsége miatt is.</p>
+<p>Elsődleges célunk, hogy Önnel közreműködve a lehető legmegfelelőbb gondozást biztosíthassuk kedvence számára.</p><p> Sikerünket a közvetlen visszajelzések mutatják két- és négylábú ügyfeleinktől.</p> <p>Büszkék vagyunk rá, hogy eddigi megrendelőinkből mindig mosolyt vagy csóváló farkat tudtunk kicsalni.</p>
+<p>Szenvedélyünk a kutya, szeretjük őket és pontosan úgy bánunk megrendelőink kutyáival, mintha sajátunk lenne.</p> <p>Jómagunk is kutyatartók vagyunk és tökéletesen megértjük annak fontosságát, hogy háziállatát egy felelősségteljes, megbízható és szerető gondozóra bízza,fontos mindhárom kvalitás.</p>
+</section>
+<section id="services" class="container">
+<h2>Szolgáltatások</h2>
+<div class="services-list">
+<div class="service">
+<img src="images/seta.jpg" alt="Sétáltatás ikon">
+<h3>Kutyasétáltatás</h3>
+<p>5000 Ft/óra</p>
+</div>
+<div class="service">
+<img src="images/napkozi.jpg" alt="Napközi ikon">
+<h3>Kisállat napközi</h3>
+<p>8000 Ft/nap</p>
+</div>
+<div class="service">
+<img src="images/kozmetika.jpg" alt="Kozmetika ikon">
+<h3>Kutyakozmetika</h3>
+<p>6000 Ft/alkalom</p>
+</div>
+<div class="service">
+<img src="images/oktatas.jpg" alt="Oktatás ikon">
+<h3>Kutyaoktatás</h3>
+<p>10000 Ft/alkalom</p>
+</div>
+</section>
+<section id="gallery">
+<h2>Galéria</h2>
+<div class="gallery">
+<img src="images/kep1.jpg" alt="Kép 1">
+<img src="images/kep2.jpg" alt="Kép 2">
+<img src="images/kep3.jpg" alt="Kép 3">
+<img src="images/kep4.jpg" alt="Kép 4">
+<img src="images/kep5.jpg" alt="Kép 5">
+<img src="images/kep6.jpg" alt="Kép 6">
+</div>
+</section>
+<section id="contact" class="container">
+<h2>Kapcsolat</h2>
+<p>Email: info@cukimancsok.hu</p>
+<p>Telefon: +36 30 123 4567</p>
+<h2>Nyitvatartás:</h2>
+<p>Minden nap: 06:00-20:00</p>
+<section id="contact" class="container">
+<h2>Értékelj bennünket</h2>
+<div class="social-icons">
+<a href="https://www.facebook.com" target="_blank" class="social-link">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="https://www.instagram.com" target="_blank" class="social-link">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+<section id="appointment" class="container">
+<h2>Időpontfoglalás</h2>
+<form action="submit_appointment.php" method="POST" class="appointment-form">
+<label for="name">Név:</label>
+<input type="text" id="name" name="name" placeholder="Add meg a neved" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Add meg az email címed" required>
+<label for="service">Válassz szolgáltatást:</label>
+<select id="service" name="service" required>
+<option value="">Válassz...</option>
+<option value="dog-walking">Kutyasétáltatás</option>
+<option value="daycare">Kisállat napközi</option>
+<option value="grooming">Kutyakozmetika</option>
+<option value="dog-training">Kutyaoktatás</option>
+</select>
+<label for="date">Időpont:</label>
+<input type="date" id="date" name="date" required>
+<label for="time">Idő:</label>
+<input type="time" id="time" name="time" required>
+<button type="submit" class="submit-button">Időpont foglalása</button>
+</form>
+</section>
+</div>
+</section>
+<div class="map">
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.693693981481!2d-6.26030928421128!3d53.3498054799794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e83d10196db%3A0xabe77f70d51baf3b!2sDublin%2C%20Ireland!5e0!3m2!1sen!2shu!4v1615584232517!5m2!1sen!2shu"
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+</main>
+<footer>
+<p>&copy; 2025 Cuki Mancsok</p>
+</footer>
+</body>
+</html>
